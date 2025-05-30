@@ -4,7 +4,7 @@ import ServiceTable from './components/ServiceTable';
 const App = () => {
   return (
     <div className="min-h-screen p-4">
-      <h1 className="font-semibold text-center mb-6 text-[#6f757a]">Salon Service List</h1>
+      <p className="font-semibold text-[20px] text-center mb-6 text-[#6f757a]">Salon Service List</p>
       <ServiceTable /> 
     </div>
   );

@@ -63,7 +63,7 @@ const ServiceTable = () => {
           placeholder="🔍 Search by service name..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="border border-gray-300 px-3 py-2 rounded-lg w-full md:w-1/3 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300"
+          className="border border-gray-300 px-3 text-gray-600 py-2 rounded-lg w-full md:w-1/3 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300"
         />
       </div>
 
@@ -90,12 +90,12 @@ const ServiceTable = () => {
               currentRecords.map((service, index) => (
                 <tr
                   key={service.id}
-                  className="hover:bg-gray-100 border-b border-gray-200 transition duration-150"
+                  className="hover:bg-gray-100 border-b text-gray-800 border-gray-200 transition duration-150"
                 >
                   <td className="px-4 py-3">{indexOfFirstRecord + index + 1}</td>
                   <td className="px-4 py-3 text-gray-800">{service.service_name}</td>
                   <td className="px-4 py-3 text-green-600 font-semibold">₹{service.price}</td>
-                  <td className="px-4 py-3">{service.service_time?.minutes || 'N/A'}</td>
+                  <td className="px-4 py-3 text-gray-800">{service.service_time?.minutes || 'N/A'}</td>
                 </tr>
               ))
             )}
